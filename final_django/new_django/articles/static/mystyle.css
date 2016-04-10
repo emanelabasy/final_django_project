@@ -1,0 +1,192 @@
+#logo {
+    /* background: url("{% static 'logo.png'%}") no-repeat; */
+    height: 62px;
+    margin: 8px 0 22px 15px;
+}
+#header_menu h4 {
+    font-weight: bold;
+    color: #d9fca3;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-family: 'PT Sans';
+}
+#header_menu>ul>li>a {
+    color: #ffffff;
+    border-bottom: 1px solid #3e9bb0;
+    text-decoration: none;
+    float: left;
+	font-size: 18px;
+	/* font-weight: bold; */
+	margin-left: 15px;
+}
+
+#header_menu {
+    padding: 11px 0 15px 13px;
+    float: none;
+}
+#forms {
+    /* left: 32px; */
+    position: absolute;
+    /* top: 81px; */
+}
+
+#login-sub-header img {
+    margin-left: -109px;
+    position: absolute;
+    top: 3px;
+}
+.carousel-control.right {
+    right: 0;
+    left: 815px;
+    width: 100px;
+}
+.login-btn, .reset-pass-btn {
+    float: left;
+    padding-top: 14px;
+    padding-left: 200px;
+}
+#top_buttons{
+    float:left;
+    width:93%;
+    height:40px;
+    margin:10px 0px 0px 10px;
+    /* background:-webkit-radial-gradient(ellipse,white 60%,pink); */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    text-align:center;
+}
+.butt{
+    color:white;
+    font-size:16px;
+    width:180px;
+    height:40px;
+    margin:5px 10px 5px 10px;
+    border:2px solid blue;
+    background: -webkit-linear-gradient(top,cyan,blue);
+    border-radius:20px;
+    -webkit-transition:-webkit-transform 2s;
+}
+.butt:hover{
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    width:220px;
+    height:45px;
+    margin:5px;
+    background: -webkit-linear-gradient(top,cyan,blue);
+    border-radius:10px;
+    border:2px solid cyan;
+    -webkit-transform:skew(30deg);
+    box-shadow: rgb(50,50,250) 10px 10px 10px;
+}
+#register-sub, #security-sub {
+    background-color: #035271;
+    background-color: rgba(3,82,113,0.75);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c0035271,endColorstr=#c0035271);
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -khtml-border-radius: 0 0 5px 5px;
+    border-top: 1px solid #0D7291;
+    width: 653px;
+    height: 588px;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: white;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+#register-container {
+    border: 1px solid gray;
+    border-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    width: 665px;
+    height:740px;
+}
+#register-sub-header {
+    background-color: #02435d;
+    background-color: rgba(2,67,93,0.75);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c002435d,endColorstr=#c002435d);
+    border-bottom: 1px solid #002F3F;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -khtml-border-radius: 5px 5px 0 0;
+    height: 65px;
+    width:653px;
+    padding: 10px 0 0;
+    text-align: center;
+}
+#register-sub-container {
+    border: 1px solid #333;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    box-shadow: 0 0 10px #000 inset;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 653px;
+    height: 730px;
+}
+#register_form{
+    position: absolute;
+    top: 50px;
+    left: 150px;   
+}
+.butt_register{
+    position: absolute;
+    right: -7px;
+    height: 35px;
+}
+.lab_txt,.inp_txt,#register_form label{
+    width: 200px;
+    height: 60px;/* 
+    border: 1px solid #fffFfF;
+    border-radius: 5px 5px 0 0; */
+    /* padding:5px; */
+    /* margin:6px 60px 6px 6px; */
+    font-size: 20px;
+    /* font-weight:bold; */
+}
+.inp_txt,#register_form input{
+    width: 360px;
+    height: 32px;
+    color: black;
+    /* border: 1px solid #fffFfF; */
+    border-radius: 5px 5px 0 0;
+    font-size: 15px;
+}
+.cap_txt{
+    background-color: #3399ff;
+    border-radius: 5px 5px 0 0;
+}
+span{
+    font: normal normal bold 14px/2 Verdana, Geneva, sans-serif;
+    color: #990000;   
+}  
+.Error{
+background: rgba(255,221,221,1);
+} 
+#register_form input #refresh,#register_form input #Button1{
+    width: 30px;
+    height: 32px;
+    color: black;
+    /* border: 1px solid #fffFfF; */
+    border-radius: 5px 5px 0 0;
+    font-size: 15px;
+
+}
+/* #id_password{
+    placeholder:"Pleaze, Enter your text";
+} */

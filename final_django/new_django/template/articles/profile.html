@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <h2>update_profile</h2>
+ 	{% if "user_id" in request.session %}
+	<a href="update_profile/{{ request.session.user_id}}" title="">
+    	<input class="butt_register" type="submit" name="update_profile" value="update_profile" id='updatebutton'/>
+ 	</a>
+ 	{% endif %}
+</body>
+</html>

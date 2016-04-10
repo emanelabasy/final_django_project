@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{%load staticfiles %}
+<html dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>EOS Article </title>
+
+<meta name="description" content="WebDesign.org offers free web design tutorials, articles, news, interviews, web design showcases, software reviews, website templates and free design stuff.">
+<meta name="keywords" content="web design, website design, web design articles, web design news, free web design tutorials, free web design stuff">
+<meta name="robots" content="index, follow">
+<meta property="fb:page_id" content="159564920822452">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="{% static 'bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css.css'%}" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="{% static 'jquery-1.8.2.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'jquery.simplemodal.js'%}"></script>
+<script src="{% static '0919.js'%}" async="" type="text/javascript"></script><script type="text/javascript" async="" src="{% static 'ga.js'%}"></script>
+ <script src="{% static 'jquery-1.12.0.min.js'%}"></script>
+    <script type="text/jaascript" src="{% static 'validateJQ.js'%}"></script>
+
+<script type="text/javascript" async="" src="{% static 'bsa.js'%}"></script><script async="" type="text/javascript" src="{% static 'count.js'%}"></script>
+<!-- <script type="text/jaascript" async="" src="{% static 'myjqery.js'%}"></script> -->
+
+<link href="{% static 'css(1).css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css(2).css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css(3).css'%}" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" media="screen">
+<link rel="stylesheet" type="text/css" href="{% static 'for_preview.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'popup-banner.css'%}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'media_request.css'%}">
+
+
+
+<!-- menu head -->
+    <link rel="shortcut icon" href="#">
+    
+
+    <!-- EXTERNAL CSS -->
+    <link href="{% static 'style_php.css'%}" rel="stylesheet" type="text/css">
+
+    <!-- EXTERNAL CSS -->
+    <link href="{% static 'mystyle.css'%}" rel="stylesheet" type="text/css">
+
+ <script type="text/javascript">
+         function Captcha(){
+             var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+             var i;
+             for (i=0;i<6;i++){
+               var a = alpha[Math.floor(Math.random() * alpha.length)];
+               var b = alpha[Math.floor(Math.random() * alpha.length)];
+               var c = alpha[Math.floor(Math.random() * alpha.length)];
+               var d = alpha[Math.floor(Math.random() * alpha.length)];
+               var e = alpha[Math.floor(Math.random() * alpha.length)];
+               var f = alpha[Math.floor(Math.random() * alpha.length)];
+               var g = alpha[Math.floor(Math.random() * alpha.length)];
+              }
+            var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+            document.getElementById("mainCaptcha").value = code
+
+            var fpass=false;
+            var npass=false;
+            var cpass=false;
+            var npassspan=document.getElementById("npass");
+            var passspan=document.getElementById("spass");
+            var capspan=document.getElementById("cappass");
+            // var conftxt=document.registration.elements["repassword"];
+            var passtxt=document.getElementById("id_password");
+            var conftxt=document.getElementById("id_repassword"); 
+            var captcha_txt=document.getElementById("txtInput"); 
+
+            // to make repasssword
+            function checkall()
+            {
+                return(fpass,npass,cpass);
+            }
+            passtxt.onblur=function()
+            {
+                if(passtxt.value.length>=6)
+                {
+                    npass=false;
+                    passtxt.className="";
+                    npassspan.style.display="none";
+                }
+                else
+                {
+                    npass=true;
+                    passtxt.className="Error";
+                    passtxt.focus();
+                    //passtxt.select;
+                    // conftxt.focus();
+                    npassspan.style.display="block";
+                }
+            }
+            conftxt.onblur=function()
+            {
+                if(passtxt.value.length>=6&&conftxt.value.length==passtxt.value.length)
+                {
+                    fpass=false;
+                    passtxt.className="";
+                    conftxt.className="";
+                    passspan.style.display="none";
+                }
+                else
+                {
+                    fpass=true;
+                    passtxt.className="Error";
+                    conftxt.className="Error";
+                    passtxt.focus();
+                    //passtxt.select;
+                    // conftxt.focus();
+                    passspan.style.display="block";
+                }
+            }
+
+            // to make captcha  
+            captcha_txt.onblur=function(){
+              var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+              var string2 = removeSpaces(document.getElementById('txtInput').value);
+              if (string1 == string2){
+                cpass=false;
+                captcha_txt.className="";
+                cappass.style.display="none";
+              }
+              else{        
+                cpass=true;
+                captcha_txt.className="Error";
+                captcha_txt.focus();
+                cappass.style.display="block";
+              }
+          }
+      }
+          function removeSpaces(string){
+            return string.split(' ').join('');
+          }
+     </script>    
+</head>
+<body onload="Captcha();">
+
+
+<div id="popup_banner"></div>
+<div style="display: none; position: absolute;z-index:110;" id="preview_div"> </div>
+ 
+
+<div id="header_tab">
+
+<div class="col-md-3 col-sm-3 col-xs-12 logo_wrapper"><a href="#"><div id="logo">
+    <img height="80" width="225" src="{% static 'artlogo.png'%}" alt="logo"></div></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 menu_wrapper">
+<div id="header_menu">
+<h4>EOS Article:</h4>
+<ul>
+    <li><a rel="nofollow" target="_self" href="index">Home</a></li>
+    <li><a rel="nofollow" target="_self" href="register">Registeration</a></li>
+    <li><a rel="nofollow" target="_self" href="login">Login</a>
+    <!-- <li><a rel="nofollow" target="_self" href="#">Logout</a> -->
+    </li>
+</ul>
+</div> 
+<!-- <div id="header_books"> sd</div>  -->
+</div>
+<div class="col-md-5 col-sm-5 col-xs-12">
+<div id="search_pic"><img height="40" width="80" src="{% static 'search.png'%}" alt="logo"></div> 
+<div id="header_search_div">
+<div class="block-search-heading">SEARCH</div>
+<form method="get" action="#">
+<div class="keyword">
+    <input type="text" id="search-keyword" name="keywords" value="" placeholder="- Any Keyword(s) - ">
+</div>
+ <div class="submit"><input class="search-btn" type="submit" value="search"></div>   
+</div>
+</form>
+</div> 
+</div>
+    <input type="hidden" id="dest_uri" value="/">
+
+    <div id="login-wrapper" class="login-whisp">
+        {% if registered %}
+        E<sup>3</sup>OS ARTICLES : <strong>thank you for registering!</strong>
+        <a href="/articles/index">Return to the homepage.</a><br />
+        {% else %}
+        <div id="register-container">
+            <div id="register-sub-container">
+                <div id="register-sub-header">
+                   <!-- <label for="">Registeration with E<sup>3</sup>OS ARTICLES</label> -->
+                    <img height="60" width="225" src="{% static 'artlogo.png'%}" alt="logo">
+                </div>
+                <div id="register-sub">
+                    <div id="forms">
+                        {% if form.errors %}
+                            <p class="error">Sorry,Can not registration in E<sup>3</sup>OS ARTICLES !!!</p>
+                        {% endif %}  
+                        <form id="register_form" action="/articles/email_register"
+                enctype="multipart/form-data" method="post" target="_top">
+                             {% csrf_token %}
+                            {{ user_form.as_p }}
+                            <span id="npass" class="span" style="display:none">plz enter password more than 6 letters ??? </span>
+                            <p>
+                         <label class="lab_txt" for='repassword'>Repassword :</label>
+                            <input class="inp_txt" id="id_repassword" type="password" required="required" name="repassword" placeholder="Pleaze, Enter your repassword"/><span id="spass" class="span" style="display:none">plz try again and enter password correct ??? </span></p>
+                            {{ profile_form.as_p }}
+                            <p><label class="lab_txt" for='Message'>Plz enter the code the below box:</label><input type="button" id="mainCaptcha"/></label><br/>
+                              <input type="button" id="refresh" value="Change Code" onclick="Captcha();" />
+                            </p>
+                         <p>
+                            <input class="inp_txt" id="txtInput" id="capt_text" type="text" required="required" name="capt_text" placeholder="Pleaze, Enter your code"/> 
+                            <span id="cappass" class="span" style="display:none">plz try again and enter text correct ??? </span>   
+                            </p><br/><br/>
+                        <input class="butt_register" type="submit" name="register" value="register" id='clkbutton'/>
+                    <!--CLOSE forms -->
+                        </form>
+        {% endif %}
+                    </div>
+
+                <!--CLOSE login-sub -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+
+        <div id="locale-footer">
+            <div class="locale-container">
+</div>
+  
+
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--Close login-wrapper -->
+</div>
+
+</body></html>

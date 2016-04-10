@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>EOS Article </title>
+
+<meta name="description" content="WebDesign.org offers free web design tutorials, articles, news, interviews, web design showcases, software reviews, website templates and free design stuff.">
+<meta name="keywords" content="web design, website design, web design articles, web design news, free web design tutorials, free web design stuff">
+<meta name="robots" content="index, follow">
+<meta property="fb:page_id" content="159564920822452">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+{%load staticfiles %}
+<link href="{% static 'css.css'%}" rel="stylesheet" type="text/css"/>
+<!-- <link title="Web Design Library" type="application/opensearchdescription+xml" rel="search" href="http://www.webdesign.org/search.xml"> -->
+
+<script type="text/javascript" src="{% static 'jquery-1.8.2.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'jquery.simplemodal.js'%}"></script>
+<script src="{% static '0919.js'%}" async="" type="text/javascript"></script><script type="text/javascript" async="" src="{% static 'ga.js'%}"></script>
+ 
+
+<script type="text/javascript" async="" src="{% static 'bsa.js'%}"></script><script async="" type="text/javascript" src="{% static 'count.js'%}"></script>
+<link href="{% static 'css1.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css2.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css3.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" media="screen">
+<link rel="stylesheet" type="text/css" href="{% static 'for_preview.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'popup-banner.css'%}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'media_request.css'%}">
+
+
+
+<!-- menu head -->
+    <link rel="shortcut icon" href="#">
+    
+
+    <!-- EXTERNAL CSS -->
+    <link href="{% static 'style_php.css'%}" rel="stylesheet" type="text/css">
+
+    <!-- EXTERNAL CSS -->
+    <link href="{% static 'mystyle.css'%}" rel="stylesheet" type="text/css">
+    <script>
+    window.DOM = { get: function(id) { return document.getElementById(id) } };
+    // function email_login() {
+            
+    //     }
+    </script>
+<body>
+
+
+<div id="popup_banner"></div>
+<div style="display: none; position: absolute;z-index:110;" id="preview_div"> </div>
+ 
+<script type="text/javascript">
+                    (function() {
+                    var bsa = document.createElement('script');
+                            bsa.type = 'text/javascript';
+                            bsa.async = true;
+                            bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
+                            // (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+                    })();       
+                     </script>
+ 
+<div id="header_tab">
+
+<div class="col-md-3 col-sm-3 col-xs-12 logo_wrapper"><a href="#"><div id="logo">
+    <img height="80" width="225" src="{% static 'artlogo.png'%}" alt="logo"></div></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 menu_wrapper">
+<div id="header_menu">
+<h4>EOS Article:</h4>
+<ul>
+    <li><a rel="nofollow" target="_self" href="index">Home</a></li>
+    <li><a rel="nofollow" target="_self" href="register">Registeration</a></li>
+    <li><a rel="nofollow" target="_self" href="login">Login</a>
+    <!-- <li><a rel="nofollow" target="_self" href="#">Logout</a> -->
+    <!-- </li> -->
+</ul>
+</div> 
+<!-- <div id="header_books"> sd</div>  -->
+</div>
+<div class="col-md-5 col-sm-5 col-xs-12">
+<div id="search_pic"><img height="40" width="80" src="{% static 'search.png'%}" alt="logo"></div> 
+<div id="header_search_div">
+<div class="block-search-heading">SEARCH</div>
+<form method="get" action="#">
+<div class="keyword">
+    <input type="text" id="search-keyword" name="keywords" value="" placeholder="- Any Keyword(s) - ">
+</div>
+ <div class="submit"><input class="search-btn" type="submit" value="search"></div>   
+</div>
+</form>
+</div> 
+</div>
+
+    <input type="hidden" id="dest_uri" value="/">
+
+    <div id="login-wrapper" class="login-whisp">
+        <div id="notify">
+            <noscript>
+                &lt;div class="error-notice"&gt;
+                    &lt;img src="/res/images/notice-error.png" alt="Error" align="left"/&gt;
+                    JavaScript is disabled in your browser.
+                    For Article to function properly, you must enable JavaScript.
+                    If you do not enable JavaScript, certain features in Article will not function correctly.
+                &lt;/div&gt;
+                </noscript>
+
+            <div id="login-status" class="error-notice" style="visibility: hidden">
+                <span class="login-status-icon"></span>
+                <div id="login-status-message">You have logged out.</div>
+            </div>
+        </div>
+        <div id="login-container">
+            <div id="login-sub-container">
+                <div id="login-sub-header">
+                    <img height="60" width="225" src="{% static 'artlogo.png'%}" alt="logo">
+                </div>
+                <div id="login-sub">
+                    <div id="forms">
+                        <form id="login_form" action="#" method="post" target="_top">
+                            <section id="top_buttons">
+                                <a href="email_register"><input type="button" class="butt" value="E-Mail Registeration" onclick="email_register()"/></a><br/><br/>
+                               <a href="face_register"> <input type="button" class="butt" value="Facebook Registeration" onclick="facer-egister()"/></a>
+                            </section>
+
+                    <div style="width: 285px;">
+                            <div class="login-btn">
+                                </div>
+                     </div>
+
+
+                            <div class="clear" id="push"></div>
+                    <!--CLOSE forms -->
+                        </form>
+                    </div>
+
+                <!--CLOSE login-sub -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+
+        <div id="locale-footer">
+            <div class="locale-container">
+</div>
+  
+
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--Close login-wrapper -->
+</div>
+
+</body></html>
