@@ -1,0 +1,1197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{%load staticfiles %}
+<html dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!-- saved from url=(0025)http://www.webdesign.org/ -->
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+<title>EOS Article </title>
+
+<meta name="description" content="WebDesign.org offers free web design tutorials, articles, news, interviews, web design showcases, software reviews, website templates and free design stuff.">
+<meta name="keywords" content="web design, website design, web design articles, web design news, free web design tutorials, free web design stuff">
+<meta name="robots" content="index, follow">
+<meta property="fb:page_id" content="159564920822452">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link href="{% static 'css' %}" rel="stylesheet" type="text/css">
+
+<link title="Web Design Library" type="application/opensearchdescription+xml" rel="search" href="{% static 'http://www.webdesign.org/search.xml'%}">
+<link href="{% static 'css(1)'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css(2)'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css(3)'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" media="screen">
+<link rel="stylesheet" type="text/css" href="{% static 'for_preview.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'popup-banner.css'%}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'media_request.css'%}">
+<script src="{% static '0919.js'%}" async="" type="text/javascript"></script><script type="text/javascript" async="" src="{% static 'ga.js'%}"></script><script type="text/javascript" src="{% static 'jquery-1.8.2.min.js'%}"></script>
+ 
+<script type="text/javascript" src="{% static 'jquery.simplemodal.js'%}"></script>
+<script type="text/javascript" async="" src="{% static 'bsa.js'%}"></script><script async="" type="text/javascript" src="{% static 'count.js'%}"></script>
+
+
+<!-- menu head -->
+    <link rel="shortcut icon" href="#">
+    
+
+    <!-- EXTERNAL CSS -->
+    <link href="{% static 'style.php'%}" rel="stylesheet" type="text/css">
+
+    <!-- EXTERNAL CSS -->
+    <link href="{% static 'mystyle.css'%}" rel="stylesheet" type="text/css">
+    <script>
+    window.DOM = { get: function(id) { return document.getElementById(id) } };
+    // function email_login() {
+            
+    //     }
+    </script>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %}"/>
+  <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'%}"></script>
+  <script src="{% static 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'%}"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:70%;
+      margin-left:50px;
+  }
+  </style>
+  <link href="{% static "mystyle.css" %}" type="text/css" media="screen"  rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div id="popup_banner"></div>
+<div style="display: none; position: absolute;z-index:110;" id="preview_div"> </div>
+ 
+<script type="text/javascript">
+                    (function() {
+                    var bsa = document.createElement('script');
+                            bsa.type = 'text/javascript';
+                            bsa.async = true;
+                            bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+                    })();        </script>
+ 
+<div id="header_tab">
+<div class="col-md-3 col-sm-3 col-xs-12 logo_wrapper"><a href="#"><div id="logo">
+    <img height="80" width="225" src="{% static 'artlogo.png'%}" alt="logo"></div></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 menu_wrapper">
+<div id="header_menu">
+<h4>E<sup>3</sup>OS ARTICLES: {{User.username}}
+    <!-- to obtain id of user that make login -->
+    
+    </h4>
+<ul>
+    <li><a rel="nofollow" target="_self" href="http://127.0.0.1:8000/user_action/">Home</a></li>
+    <li><a rel="nofollow" target="_self" href="/articles/profile">Profile</a>
+    <li><a rel="nofollow" target="_self" href="#">Articles</a></li>
+    <li><a rel="nofollow" target="_self" href="#">Contact</a>
+    {% if "user_id" in request.session %}
+        <li><a rel="nofollow" target="_self" href="/articles/logout">Logout</a></li>
+    {% else %}
+           <li><a rel="nofollow" target="_self" href="/articles/signin">Login</a></li>
+    {% endif %} 
+        
+</ul>
+</div> 
+<!-- <div id="header_books"> sd</div>  -->
+</div>
+<div class="col-md-5 col-sm-5 col-xs-12">
+<div id="search_pic"><img height="40" width="80" src="{% static 'search.png'%}" alt="logo"></div> 
+<div id="header_search_div">
+<div class="block-search-heading">SEARCH</div>
+<form method="get" action="#">
+<div class="keyword">
+    <input type="text" id="search-keyword" name="keywords" value="" title=" - Any Keyword(s) - ">
+</div>
+ <div class="submit"><input class="search-btn" type="submit" value="search"></div>   
+</div>
+</form>
+</div> 
+</div>
+
+
+<div class="row wrapper-area">
+<div class="col-md-3 col-sm-3 col-xs-12" id="tab_left">
+<div class="menu-open close">
+</div>
+<div class="block block-category"><div class="heading">Web Design Basics</div><div class="content"><div class="item item-26 first"><a href="http://www.webdesign.org/web-design-basics/web-design-showcase/page-1.html" data-category="26" class="">Web Design Showcase</a></div><div class="item item-2"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html" data-category="2" class="">Design Principles</a></div><div class="item item-111"><a href="http://www.webdesign.org/web-design-basics/responsive-design/page-1.html" data-category="111" class="">Responsive Design</a></div><div class="item item-108"><a href="http://www.webdesign.org/web-design-basics/web-typography/page-1.html" data-category="108" class="">Web Typography</a></div><div class="item item-110"><a href="http://www.webdesign.org/web-design-basics/freebies/page-1.html" data-category="110" class="">Freebies</a></div></div><div class="heading">Tutorials</div><div class="content"><div class="item item-7 hasChildren collapsed first"><a href="http://www.webdesign.org/tutorials/photoshop/page-1.html" data-category="7" class="">Photoshop Tutorials</a><div class="sub-menu"><div class="item"><a href="http://www.webdesign.org/page/photo-manipulation" data-category="115">&nbsp;&nbsp;&nbsp;Photo Manipulations 101</a></div><div class="item"><a href="http://www.webdesign.org/tutorials/photoshop/web-layout/page-1.html" data-category="65">&nbsp;&nbsp;&nbsp;Web Layout</a></div><div class="item"><a href="http://www.webdesign.org/tutorials/photoshop/archive.html" data-category="114">&nbsp;&nbsp;&nbsp;Archive</a></div></div></div><div class="item item-21"><a href="http://www.webdesign.org/tutorials/html-and-css/page-1.html" data-category="21" class="">HTML and CSS</a></div><div class="item item-120"><a href="http://www.webdesign.org/page/web-design-101" data-category="120" class="">Web design 101</a></div><div class="item item-121"><a href="http://www.webdesign.org/page/site-launch" data-category="121" class="">Site Launch</a></div></div><div class="heading">Web Products</div><div class="content"><div class="item item-117 first"><a href="http://www.webdesign.org/page/wordpress" data-category="117" class="">WordPress CMS</a></div><div class="item item-118"><a href="http://www.webdesign.org/page/drupal" data-category="118" class="">Drupal CMS</a></div><div class="item item-119"><a href="http://www.webdesign.org/page/joomla" data-category="119" class="">Joomla CMS</a></div><div class="item item-112"><a href="http://www.webdesign.org/web-products/wix-templates/page-1.html" data-category="112" class="">Free Wix Templates</a></div></div></div>                    <style>.new-pages{margin-top:20px;}.new-pages a{color:#045779;text-decoration:none;display:block;}.new-pages .heading:hover a{color:#006666;}.new-pages .heading{margin-bottom:10px;background:#d8fba4!important;border:none!important;}.new-pages .heading:hover{background:#ffffff!important;}</style>
+
+<div class="block block-category new-pages">
+    <div class="heading">
+        <a href="http://www.webdesign.org/page/how-to-run-your-site-in-15-minutes">
+            Launch a Site in 15 Minutes!
+        </a>
+    </div>
+    <div class="heading">
+        <a href="http://www.webdesign.org/page/wordpress">
+            WordPress 101
+        </a>
+    </div>
+    <div class="heading">
+        <a href="http://www.webdesign.org/page/write-for-us">
+            Write for Us!
+        </a>
+    </div>
+</div><script type="text/javascript">
+    
+    $(document).ready(function(){
+        var input = $('#sidebar_subscription_input');
+        input.focus(function(){
+            if (input.val() == 'E-mail address') {
+                input.val('');
+            }
+            input.css({'color': '#000000'});
+        });    
+        input.blur(function(){
+            if (input.val() == '') {
+                input.css({'color': '#999999'});
+                input.val('E-mail address');
+            }
+        });
+        $('#sidebar_subscription_submit').click(function(){
+            var email = $('#sidebar_subscription_input').val();
+            var type = $('.block-sidebar-subscription').attr('data-type');
+            
+            switch(type){
+                case 'standart' : sendAjaxStandart(); break;
+                case 'ebook' : sendAjaxEbook(); break;
+                case 'social' : sendAjaxSocial(); break;    
+            }
+            function sendAjaxStandart(){
+                if (email.length != 0 && email != 'E-mail address') {
+                $.ajax({
+                    url: '/aweber.php',
+                    type: 'POST',
+                    data: {
+                        'subscriber_email' : email
+                    },
+                    beforeSend: function() {                        
+                        var content = '<div class="text text-preloader">Please wait. System verifies your email.</div>';
+                        content += '<div class="pic"></div>';
+                        $('div.block-sidebar-subscription > div.content').html(content);
+                        $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                        
+                                    },
+                                    success: function (data) {
+                                        data = $.parseJSON(data);
+                                        if (data.code == 1) {
+                                            var content = '<div class="text-heading">Thank You!</div>';
+                                            content += '<div class="text">' + data.message + '</div>';
+                                            content += '<div class="pic"></div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                                        }
+                                        else if (data.code == 2) {
+                                            var content = '<div class="text text-notice">' + data.message + '</div>';
+                                            content += '<div class="pic"></div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                                        }
+                                        else if (data.code > 2) {
+                                            var content = '<div class="text text-warning">' + data.message + '</div>';
+                                            content += '<div class="pic"></div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                                        } else {
+                                            console.log(data);
+                                            $('div.block-sidebar-subscription > div.content > div.error').text(data.message).css({'display': 'block'});
+                                            $('div.block-sidebar-subscription > div.content > div.button-wrapper').css({'padding-top': '8px'});
+                                        }
+                                    }
+                                });
+                            }
+                        }
+            function sendAjaxEbook(){
+                if (email.length != 0 && email != 'E-mail address') {
+                $.ajax({
+                    url: '/aweber.php',
+                    type: 'POST',
+                    data: {
+                        'subscriber_email' : email
+                    },
+                                    beforeSend: function() {
+                        var content = '<div class="text ebook-text-preloader">Please wait. System verifies your email.</div>';
+                        content += '<div class="img_wrapper loader_img_wrapper">';
+                                                content += '<img alt="" src="/images/img1.png">';
+                                                content += '</div>';
+                                                content += '<div class="text">Beginners Guide to <span>HTML</span></div>';
+                        $('div.block-sidebar-subscription > div.content').html(content);
+                        $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                        
+                                    },
+                                    success: function (data) {
+                                        data = $.parseJSON(data);
+                                        if (data.code == 1) {
+                                            var $url = '/download.php?file=downloads/Beginners_Guide_to_HTML.pdf';
+                                            $.ajax({
+                                                type: 'GET',
+                                                url: $url,
+                                                success: function(data){
+                                                            if(data == true){
+                                                                alert('This file is not available for download.');
+                                                            }else{
+                                                                window.location =""+$url+"";
+                                                            }
+                                                        }
+         
+                                            })
+                                            content = '<div class="success-text text">The download process has started! You might have noticed you signed up for something with your email. Don’t fret, we do not spam! We’ll only send you some freebies and other valuable stuff once in a while.</div>';
+                                            content += '<div class="img_wrapper result_img_wrapper">';
+                                            content += '<img alt="" src="/images/img1.png">';
+                                            content += '</div>';
+                                            content += '<div class="text">Beginners Guide to <span>HTML</span></div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+    
+                                            
+                                        }
+                                        else if (data.code == 2) {
+                                            var content = '<div class="text text-notice">' + data.message + '</div>';
+                                            content += '<div class="img_wrapper error_img_wrapper">';
+                                            content += '<img alt="" src="/images/img1.png">';
+                                            content += '</div>';
+                                            content += '<div class="text">Beginners Guide to <span>HTML</span></div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                                        }else if(data.code == 3){
+                                             var $url = '/download.php?file=downloads/Beginners_Guide_to_HTML.pdf';
+                                            $.ajax({
+                                                type: 'GET',
+                                                url: $url,
+                                                success: function(data){
+                                                            if(data == true){
+                                                                alert('This file is not available for download.');
+                                                            }else{
+                                                                window.location =""+$url+"";
+                                                            }
+                                                        }
+         
+                                            })
+                                            content = '<div class="success-text text">The download process has started!</div>';
+                                            content += '<div class="img_wrapper result_img_wrapper">';
+                                            content += '<img alt="" src="/images/img1.png">';
+                                            content += '</div>';
+                                            content += '<div class="text">Beginners Guide to <span>HTML</span></div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+    
+                                        } else {
+                                            console.log(data);
+                                            $('div.block-sidebar-subscription > div.content > div.error').text(data.message).css({'display': 'block'});
+                                            $('div.block-sidebar-subscription > div.content > div.button-wrapper').css({'padding-top': '8px'});
+                                        }
+                                    }
+                                });
+                            }
+            }
+            function sendAjaxSocial(){
+             if (email.length != 0 && email != 'E-mail address') {
+                 $.ajax({
+                    url: '/aweber.php',
+                    type: 'POST',
+                    data: {
+                        'subscriber_email' : email
+                    },
+                                    beforeSend: function() {
+                        var content = '<div class="text social-text-preloader">Please wait. System verifies your email.</div>';
+                        content += '<div class="img_wrapper loader_img_wrapper">';
+                                                content += '<img alt="" src="/images/img3.png">';
+                                                content += '</div>';
+                                                content += '<div class="text">Awesome WP Theme Social Optimized</div>';
+                        $('div.block-sidebar-subscription > div.content').html(content);
+                        $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                        
+                                    },
+                                    success: function (data) {
+                                        data = $.parseJSON(data);
+                                        if (data.code == 1) {
+                                            var $url = '/download.php?file=downloads/social_template.zip';
+                                            $.ajax({
+                                                type: 'GET',
+                                                url: $url,
+                                                success: function(data){
+                                                            if(data == true){
+                                                                alert('This file is not available for download.');
+                                                            }else{
+                                                                window.location =""+$url+"";
+                                                            }
+                                                        }
+         
+                                            })
+                                            content = '<div class="success-text text">The download process has started! You might have noticed you signed up for something with your email. Don’t fret, we do not spam! We’ll only send you some freebies and other valuable stuff once in a while.</div>';
+                                            content += '<div class="img_wrapper result_img_wrapper">';
+                                            content += '<img alt="" src="/images/img3.png">';
+                                            content += '</div>';
+                                            content += '<div class="text">Awesome WP Theme Social Optimized</div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+    
+                                            
+                                        }
+                                        else if (data.code == 2) {
+                                            var content = '<div class="text text-notice">' + data.message + '</div>';
+                                            content += '<div class="img_wrapper error_img_wrapper">';
+                                            content += '<img alt="" src="/images/img3.png">';
+                                            content += '</div>';
+                                            content += '<div class="text">Awesome WP Theme Social Optimized</div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                                        }
+                                        else if (data.code == 3) {
+                                            var $url = '/download.php?file=downloads/social_template.zip';
+                                            $.ajax({
+                                                type: 'GET',
+                                                url: $url,
+                                                success: function(data){
+                                                            if(data == true){
+                                                                alert('This file is not available for download.');
+                                                            }else{
+                                                                window.location =""+$url+"";
+                                                            }
+                                                        }
+         
+                                            })
+                                            content = '<div class="success-text text">The download process has started!</div>';
+                                            content += '<div class="img_wrapper result_img_wrapper">';
+                                            content += '<img alt="" src="/images/img3.png">';
+                                            content += '</div>';
+                                            content += '<div class="text">Awesome WP Theme Social Optimized</div>';
+                                            $('div.block-sidebar-subscription > div.content').html(content);
+                                            $('div.block-sidebar-subscription > div.content > div.text').css({'padding-bottom': '5px'});
+                                        } else {
+                                            console.log(data);
+                                            $('div.block-sidebar-subscription > div.content > div.error').text(data.message).css({'display': 'block'});
+                                            $('div.block-sidebar-subscription > div.content > div.button-wrapper').css({'padding-top': '8px'});
+                                        }
+                                    }
+                                });
+                            }
+            }
+        });
+    });
+</script>
+                    <div class="tmp"></div>
+                    <div class="karetka" style="position:absoulate ; top: 10px; left: 10px; margin-top: 0px;">
+                        
+                        <div class="block-featured-template">
+    <div class="heading">
+        <div class="left">featured web templates</div>
+        <div class="right"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <table>
+            <tbody>
+                            <tr>
+                <td>
+                    <div class="container">
+                                                <a onmouseover="showtrail(&#39;http://scr.templatemonster.com/58100/58152-b-responsive.jpg&#39;, &#39;&#39;, 430, 1658)" onmouseout="hidetrail()" title="click to view this web template" target="_blank" href="http://store.templatemonster.com/website-templates/58152.html?aff=wdl">
+                            <img border="0" alt="click to view this web template" src="./style_file/58152-med.jpg" class="thema_img"></a>
+                    </div>
+                    <div class="button">
+                        <a target="_blank" href="http://store.templatemonster.com/website-templates/58152.html?aff=wdl">
+                            <span>view template</span>
+                        </a>
+                    </div>
+                </td>
+                </tr>
+                                    <tr>
+                        <td class="divider divider-horisontal">&nbsp;</td>
+                    </tr>
+                                            <tr>
+                <td>
+                    <div class="container">
+                                                <a onmouseover="showtrail(&#39;http://scr.templatemonster.com/58000/58092-b-responsive.jpg&#39;, &#39;&#39;, 430, 1643)" onmouseout="hidetrail()" title="click to view this web template" target="_blank" href="http://store.templatemonster.com/website-templates/58092.html?aff=wdl">
+                            <img border="0" alt="click to view this web template" src="./style_file/58092-med.jpg" class="thema_img"></a>
+                    </div>
+                    <div class="button">
+                        <a target="_blank" href="http://store.templatemonster.com/website-templates/58092.html?aff=wdl">
+                            <span>view template</span>
+                        </a>
+                    </div>
+                </td>
+                </tr>
+                                    <tr>
+                        <td class="divider divider-horisontal">&nbsp;</td>
+                    </tr>
+                                            <tr>
+                <td>
+                    <div class="container">
+                                                <a onmouseover="showtrail(&#39;http://scr.templatemonster.com/58300/58323-b-responsive.jpg&#39;, &#39;&#39;, 430, 870)" onmouseout="hidetrail()" title="click to view this web template" target="_blank" href="http://store.templatemonster.com/website-templates/58323.html?aff=wdl">
+                            <img border="0" alt="click to view this web template" src="./style_file/58323-med.jpg" class="thema_img"></a>
+                    </div>
+                    <div class="button">
+                        <a target="_blank" href="http://store.templatemonster.com/website-templates/58323.html?aff=wdl">
+                            <span>view template</span>
+                        </a>
+                    </div>
+                </td>
+                </tr>
+                                        </tbody>
+        </table>
+        <div>
+            <a href="http://www.templatemonster.com/?aff=wdl">More templates</a>&nbsp;<img src="./style_file/more.jpg" width="13" height="7">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12" id="tab_center">
+<div id="page_content">
+    <div class="block-home block-web-design-for-your-site">
+        <div class="heading"><h4>E<sub>3</sub>OS Article</h4.</div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="banner-wide">
+         <!-- slider barr -->
+        <div class="container">
+          <br>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="{% static 'artt3.png'}" alt="Article" width="0" height="400">
+              </div>
+
+              <div class="item">
+                <img src="{% static 'artt4.png'%}" alt="Article" width="0" height="400">
+              </div>
+            
+              <div class="item">
+                <img src="{% static 'artttt3.png'%}" alt="Article" width="0" height="400">
+              </div>
+
+              <div class="item">
+                <img src="{% static 'artt7.png'%}" alt="Article" width="0" height="400">
+              </div>
+              <div class="item">
+                <img src="{% static 'art3.jpg'%}" alt="Article" width="0" height="400">
+              </div>
+              <div class="item">
+                <img src="{% static 'art1.jpg'%}" alt="Article" width="0" height="400">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+</div>
+
+<div class="block-home block-web-design-blog block-web-design-pinned_post">
+    <div class="heading">pinned posts</div>
+    <div class="content">
+        <div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22591">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/the-ultimate-guide-to-ecommerce-design-trends-2016.22591.html">The Ultimate Guide to eCommerce Design Trends 2016</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html">Web Design Principles</a></div>
+                <div class="date date-format">Jan 27, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/the-ultimate-guide-to-ecommerce-design-trends-2016.22591.html">
+                            <img src="./style_file/previewImage" alt="The Ultimate Guide to eCommerce Design Trends 2016">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        It's no secret eCommerce is huge business these days, and this industry continues to grow. Of course, eCommerce is highly dependant on user expectations, trends and new technologies. If your eCommerce website is poorly designed and doesn't correspond with the customer's idea of how it's supposed to look and work, then your business is doomed.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/the-ultimate-guide-to-ecommerce-design-trends-2016.22591.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22555">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/building-fast-websites.22555.html">A Short Guide to Building Fast Websites</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html">Web Design Principles</a></div>
+                <div class="date date-format">Jul 13, 2015</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/building-fast-websites.22555.html">
+                            <img src="./style_file/previewImage(1)" alt="A Short Guide to Building Fast Websites">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        There are some things you just have to prioritize first, and that means building websites for speed from the outset. Learn what those things are.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/building-fast-websites.22555.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22531">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/material-style-web-templates-from-web-design-library.22531.html">Material Style Web Templates from Web Design Library</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/templates-tuning/page-1.html">Web Template Customization</a></div>
+                <div class="date date-format">Apr 20, 2015</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/material-style-web-templates-from-web-design-library.22531.html">
+                            <img src="./style_file/previewImage(2)" alt="Material Style Web Templates from Web Design Library">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        If you are in web design business (you are reading this post, so you most probably are) you absolutely could not miss the latest rage in the industry - Google's material design.                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/material-style-web-templates-from-web-design-library.22531.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22510">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/review-on-the-most-affordable-hosting-company-bluehost.22510.html">Bluehost Review. Is It Really Worth It?</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/site-maintenance/hosting-services/page-1.html">Hosting Services</a></div>
+                <div class="date date-format">Feb 15, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/review-on-the-most-affordable-hosting-company-bluehost.22510.html">
+                            <img src="./style_file/previewImage(3)" alt="Bluehost Review. Is It Really Worth It?">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        One detail you absolutely can not oversee when launching a new project is hosting. This article is aimed to help you a bit in making an educated decision. We will focus on one of the most affordable and reliable companies on the market - Bluehost. Find out about their services and prices and if it all fits your project.                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/review-on-the-most-affordable-hosting-company-bluehost.22510.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22529">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/stay-competitive-learn-responsive-design.22529.html">Stay Competitive - Learn Responsive Design</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/freebies/page-1.html">Freebies</a></div>
+                <div class="date date-format">Apr 15, 2015</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/stay-competitive-learn-responsive-design.22529.html">
+                            <img src="./style_file/previewImage(4)" alt="Stay Competitive - Learn Responsive Design">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        In our day and age, when about 70% of people browse the internet via mobile devices of various sizes, it's almost incomprehensible to create a website that is not responsive.                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/stay-competitive-learn-responsive-design.22529.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22438">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/bootstrap-templates-what-are-they-and-why-you-need-one.22438.html">Bootstrap Templates, What are They and Why You Need One?</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html">Web Design Principles</a></div>
+                <div class="date date-format">Jun 18, 2015</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/bootstrap-templates-what-are-they-and-why-you-need-one.22438.html">
+                            <img src="./style_file/previewImage(5)" alt="Bootstrap Templates, What are They and Why You Need One?">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        If you are looking for a highly responsive, easily customizable and beautifully designed web template you need one built with Bootstrap. What is so special about Bootstrap and why should you care what your template is built with? Well, let's find out, shall we?
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/bootstrap-templates-what-are-they-and-why-you-need-one.22438.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div></div>
+    </div>
+</div>
+<div class="block-home block-web-design-blog">
+    <div class="heading">blog</div>
+    <div class="content">
+        <div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22601">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/free-icon-set-32-flat-internet-marketing-icons.22601.html">Free Icon Set - 32 Flat Internet Marketing Icons</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/freebies/page-1.html">Freebies</a></div>
+                <div class="date date-format">Mar 30, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/free-icon-set-32-flat-internet-marketing-icons.22601.html">
+                            <img src="./style_file/previewImage(6)" alt="Free Icon Set - 32 Flat Internet Marketing Icons">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        It's been a while since we last had a freebie to share with you. Today I'm going to make up for this unfortunate mistake. Read on to get the awesome freebie!                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/free-icon-set-32-flat-internet-marketing-icons.22601.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22600">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/the-wonders-of-microsoft-surface-pro-4-for-web-designers.22600.html">The Wonders of Microsoft Surface Pro 4 for Web Designers</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/miscellaneous/page-1.html">Miscellaneous</a></div>
+                <div class="date date-format">Mar 16, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/the-wonders-of-microsoft-surface-pro-4-for-web-designers.22600.html">
+                            <img src="./style_file/previewImage(7)" alt="The Wonders of Microsoft Surface Pro 4 for Web Designers">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        With the rising need of having a digital presence in this modern world, more and more companies and businesses are looking to have their own website. With the increasing demand of websites comes the need for brilliant web designers. But what could a web designer do without an equally brilliant piece of technology where they could design equally great websites.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/the-wonders-of-microsoft-surface-pro-4-for-web-designers.22600.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22599">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/march-mix-promo-at-templatemonster-3-weeks-of-unprecedented-discounts.22599.html">March Mix-Promo at TemplateMonster. 3 Weeks of Unprecedented Discounts</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/templates-tuning/page-1.html">Web Template Customization</a></div>
+                <div class="date date-format">Mar 15, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/march-mix-promo-at-templatemonster-3-weeks-of-unprecedented-discounts.22599.html">
+                            <img src="./style_file/previewImage(8)" alt="March Mix-Promo at TemplateMonster. 3 Weeks of Unprecedented Discounts">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        If you've been waiting for a good deal to get every web template you need for your upcoming projects - this March is the time to get them!                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/march-mix-promo-at-templatemonster-3-weeks-of-unprecedented-discounts.22599.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22598">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/down-to-the-nitty-gritty-best-practices-for-web-design-project-management.22598.html">Down to the Nitty-Gritty: Best Practices for Web Design Project Management</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html">Web Design Principles</a></div>
+                <div class="date date-format">Mar 09, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/down-to-the-nitty-gritty-best-practices-for-web-design-project-management.22598.html">
+                            <img src="./style_file/previewImage(9)" alt="Down to the Nitty-Gritty: Best Practices for Web Design Project Management">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        As designers, we're accustomed to conceptualizing websites in terms of design structure - wireframes, whitespace, code, navigation, and so on - as well as in terms of content management. But before a design project can even reach that point, you and your team must create a project plan.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/down-to-the-nitty-gritty-best-practices-for-web-design-project-management.22598.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22596">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/up-to-75-off-all-templatemonster-products.22596.html">Up to 75% OFF All TemplateMonster Products</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/templates-tuning/page-1.html">Web Template Customization</a></div>
+                <div class="date date-format">Feb 15, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/up-to-75-off-all-templatemonster-products.22596.html">
+                            <img src="./style_file/previewImage(10)" alt="Up to 75% OFF All TemplateMonster Products">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        This post contains awesome news for those of you who love TemplateMonster, those who love quality web products and those who love hot deals.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/up-to-75-off-all-templatemonster-products.22596.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22595">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/vectips-my-favorite-source-for-adobe-illustrator-tutorials.22595.html">Vectips - My Favorite Source for Adobe Illustrator Tutorials</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/miscellaneous/page-1.html">Miscellaneous</a></div>
+                <div class="date date-format">Feb 12, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/vectips-my-favorite-source-for-adobe-illustrator-tutorials.22595.html">
+                            <img src="./style_file/previewImage(11)" alt="Vectips - My Favorite Source for Adobe Illustrator Tutorials">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        When it comes to Adobe Photoshop, you might be a beginner who is not much savvy about the Illustrator tool and the various unique ways it offers. Vectips offers a detailed discussion on the tips, tricks and the secrets of handling Adobe Illustrator.                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/vectips-my-favorite-source-for-adobe-illustrator-tutorials.22595.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22594">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/what-is-agile-web-development.22594.html">What Is Agile Web Development?</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html">Web Design Principles</a></div>
+                <div class="date date-format">Feb 10, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/what-is-agile-web-development.22594.html">
+                            <img src="./style_file/previewImage(12)" alt="What Is Agile Web Development?">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        Agile web design is not so much a process; it's more of a philosophy. Today, agile project development is a popular - and highly effective - way to design websites. Let's take a look at how it works.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/what-is-agile-web-development.22594.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22593">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/responsive-designing-for-e-commerce-websites-what-are-the-pros-and-cons.22593.html">Responsive Designing for e-Commerce Websites - What Are the Pros and Cons?</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/responsive-design/page-1.html">Responsive Design</a></div>
+                <div class="date date-format">Feb 03, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/responsive-designing-for-e-commerce-websites-what-are-the-pros-and-cons.22593.html">
+                            <img src="./style_file/previewImage(13)" alt="Responsive Designing for e-Commerce Websites - What Are the Pros and Cons?">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        Responsive designing is an essential feedback to the requirement for the websites to offer internet users through multiple devices in a scalable and efficient way. But something that you should note is that responsive designing has been pretty slow with catching up with e-commerce, with only 3% of the companies listed in IR500 utilizing an effective responsive explication for their mobile visitors and 65% using mobile-intensive websites for server-side adaptive HTML.                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/responsive-designing-for-e-commerce-websites-what-are-the-pros-and-cons.22593.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22592">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/the-most-important-factors-when-choosing-a-web-hosting-provider.22592.html">The Most Important Factors When Choosing a Web Hosting Provider</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/site-maintenance/hosting-services/page-1.html">Hosting Services</a></div>
+                <div class="date date-format">Jan 28, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/the-most-important-factors-when-choosing-a-web-hosting-provider.22592.html">
+                            <img src="./style_file/previewImage(14)" alt="The Most Important Factors When Choosing a Web Hosting Provider">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        Before you can setup a website, you need a web host. With so many hosting companies out there, how do you know which one to choose? Even seasoned website designers and savvy digital marketers can have difficulty picking the right web host provider. Here are a handful of tips that will help make the choice easier.                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/the-most-important-factors-when-choosing-a-web-hosting-provider.22592.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div>    <div class="row  item">
+        <div class="article-item-2" data-item-id="22591">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h3><a href="http://www.webdesign.org/the-ultimate-guide-to-ecommerce-design-trends-2016.22591.html">The Ultimate Guide to eCommerce Design Trends 2016</a></h3>
+            </div>
+            <div class="meta-data col-md-12 col-sm-12 col-xs-12">
+<!--                <div class="author"><a href="/search.php?author=--><!--">--><!--</a></div>-->
+                <div class="category"><a href="http://www.webdesign.org/web-design-basics/design-principles/page-1.html">Web Design Principles</a></div>
+                <div class="date date-format">Jan 27, 2016</div>
+<!--                 <div class="divider"></div>-->
+            </div>
+           
+                                    <div class="image col-md-12 col-sm-12 col-xs-12">
+                        <a href="http://www.webdesign.org/the-ultimate-guide-to-ecommerce-design-trends-2016.22591.html">
+                            <img src="./style_file/previewImage" alt="The Ultimate Guide to eCommerce Design Trends 2016">
+                        </a>
+                    </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="description">
+                        It's no secret eCommerce is huge business these days, and this industry continues to grow. Of course, eCommerce is highly dependant on user expectations, trends and new technologies. If your eCommerce website is poorly designed and doesn't correspond with the customer's idea of how it's supposed to look and work, then your business is doomed.                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="more-data">
+                        <div class="left"><a href="http://www.webdesign.org/the-ultimate-guide-to-ecommerce-design-trends-2016.22591.html"><span><span><span>read more</span></span></span></a></div>
+<!--                        <div class="right"><a href="--><!--#disqus_thread" data-disqus-identifier="wdlibrary_--><!--">comments</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="divider-blog"></div>
+            </div>
+        </div></div>
+        <div class="entries"><a href="http://www.webdesign.org/blog/page-2.html"> Older Entries</a></div>
+    </div>
+</div>
+<div class="block-home block-web-design">
+    <div class="heading">web design</div>
+    <div class="content"><div>
+<p>Welcome to Web Design Library, the ultimate source of all sorts of info that you need in your professional life. If you're new to web design - go ahead and check out our <a target="_blank" href="http://www.webdesign.org/web-design-basics/page-1.html">basics</a> section where our experienced pros put together a whole lot of articles and step-by-step tutorials full of practical knowledge.</p>
+
+<p>Make sure to visit the <a target="_blank" href="http://www.webdesign.org/page/web-design-101">Web Design 101</a> page to learn the core rules of the industry, acquaint yourself with website usability principles and color theory in case you really want to become a guru (or just refresh your knowledge if you already are).</p>
+
+<p>We've also included the <a target="_blank" href="http://www.webdesign.org/web-design-basics/web-typography/page-1.html">Typography</a> section because it's been a rage among pros out there. And this trend isn't going anywhere any time soon.</p>
+
+<p>You can find a bunch of practical and easy-to-follow tutorials on how to work with <a target="_blank" href="http://www.webdesign.org/page/wordpress">WordPress</a>, <a target="_blank" href="http://www.webdesign.org/page/joomla">Joomla</a>, and <a target="_blank" href="http://www.webdesign.org/page/drupal">Drupal</a> on the dedicated pages. You'll learn not only how to use your CMS but also how to customize it as you see fit and improve for better performance.</p>
+
+<p>Another huge section is Photoshop and that's for a reason because you can't be an expert without getting to grips with the industry standard image editor. If you pay close attention to the section and learn just about everything, you'll be able to take up virtually any design-related job because we offer Photoshop tutorials and articles both for beginners and pros. Make sure to study the <a target="_blank" href="http://www.webdesign.org/page/photo-manipulation">Photo Manipulation</a> and <a target="_blank" href="http://www.webdesign.org/tutorials/photoshop/web-layout/page-1.html">Web Layout</a> sections, these two are a goldmine.</p>
+
+<p>Being a skillful pro, you definitely need to know at least the basics of both <a target="_blank" href="http://www.webdesign.org/page/free-ebook">HTML</a> and CSS. You'll find this sort of tutorials in the <a target="_blank" href="http://www.webdesign.org/tutorials/html-and-css/page-1.html">HTML and CSS</a> section on our site. You'll be able to learn everything about these disciplines from top to bottom. After you’ve learned how to design a website it’s time to find out how to launch one and it’s where our <a target="_blank" href="http://www.webdesign.org/page/site-launch">Site Launch 101</a> page will be of great use.  So the bottom line is that here at Web Design Library you can learn how to create an amazing work of art and actually make it work as a full-fledged web site.</p>
+</div>    </div>
+</div>
+                    </div>
+                </div>
+                            </div>
+            <div class="row footer"><!-- start footer -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!--<div id="popup_banner"></div>-->
+<script src="./style_file/functions.js" type="text/javascript"></script>
+<!--[if lt IE 7]>
+<![if gte IE 5.5]>
+<script type="text/javascript" src="/js/fixpng.js"></script>
+<style type="text/css">
+.iePNG, img { filter:expression(fixPNG(this)); }
+.popup_banner {padding-left:7px;height:188px;width:153px;}
+</style>
+<![endif]>
+<style type="text/css">
+#roll_up_button {
+  background-image:url(../images/popup/roll_up.gif);
+}
+#roll_up_button.down {
+    background-image:url(../images/popup/roll_down.gif);
+}
+#close_button {
+    background-image:url(../images/popup/close.gif);
+}
+</style>
+<![endif]-->
+
+        <script type="text/javascript">
+            var wdl = {
+                'text': '<p>Hi! Let me help you choose the right web template.</p><p>What kind of website are you planning to make?</p>',
+                'period': 14,
+                'steps': 3,
+                'open_time': 60,
+                'float': 'corner',
+                'overlay': '0',
+                'blink_period': 15,
+                'blink_frequency': 200,
+                'blink_count': 2            };
+        </script>    
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('#livechat').appendTo('body');
+    });
+</script>
+<script type="text/javascript" src="./style_file/jquery-ui-1.9.1.custom.min.js"></script>
+<script type="text/javascript" src="./style_file/main.js"></script>
+
+<!--<script type="text/javascript" src="/js/main.js"></script>-->
+<script type="text/javascript"> 
+
+  var _gaq = _gaq || []; 
+  _gaq.push(['_setAccount', 'UA-2347512-1']); 
+  _gaq.push(['_trackPageview']); 
+  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000); 
+
+  (function() { 
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+  })(); 
+
+</script> 
+
+<!-- Google Analytics Social Button Tracking -->
+<script type="text/javascript" src="./style_file/ga_social_tracking.js"></script>
+<!--<div style="display: none; position: absolute;z-index:110;" id="preview_div"> </div>-->
+<script src="./style_file/preview_templates.js" type="text/javascript"> </script>
+<div class="footer-menu">
+    <ul>
+        <li><a href="http://www.webdesign.org/">HOME</a></li>
+        <li><a rel="nofollow" href="http://store.templatemonster.com/?aff=wdl" target="_blank">WEBSITE TEMPLATES</a></li>
+        <li><a href="http://www.webdesign.org/about.php">ABOUT US</a></li>
+        <li><a href="http://www.webdesign.org/page/write-for-us">WRITE FOR US</a></li>
+        <li><a href="http://www.webdesign.org/contact.php">CONTACT US</a></li>
+    </ul>
+</div>
+<div class="footer-copyright">
+    <p class="copyright-text">© 2004-2016 Nova Holding Group LTD. <span>- </span>articles and tutorials. Website maintained by Maestro Solutions LTD. This website designed by Templatemonster.com</p>
+</div> 
+                </div>
+            </div>
+        
+
+
+        <script type="text/javascript">curr_cat = "m_";</script>
+        <script type="text/javascript">
+                    var disqus_shortname = 'wdlibrary';
+                    (function() {
+                    var s = document.createElement('script');
+                            s.async = true;
+                            s.type = 'text/javascript';
+                            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                    }());        </script>
+        <script type="text/javascript">
+                    setTimeout(function() {
+                            var a = document.createElement("script");
+                            var b = document.getElementsByTagName("script")[0];
+                            a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/0919.js?" + Math.floor(new
+                                    Date().getTime() / 3600000);
+                            a.async = true;
+                            a.type = "text/javascript";
+                            b.parentNode.insertBefore(a, b)
+                    }, 1);
+        </script>
+    
+
+
+<div id="livechat">
+        <form method="POST" action="" class="chat-form" id="chat-form">
+            <div class="livechat livechat-corner ui-draggable">
+                <div class="chat-header">
+                    <p class="chat-title">Need a Website?</p>
+                    <a href="http://www.webdesign.org/#" class="wdl-btn chat-btn-close"></a>
+                </div>
+                <div class="chat-content">
+                    <div class="chat-text">
+                        <p>Hi! Let me help you choose the right web template.</p><p>What kind of website are you planning to make?</p>                  </div>
+
+                    <input type="hidden" class="chat-referer" value="http://www.webdesign.org/">
+                    <input type="text" id="nick" class="chat-field chat-name" placeholder="your name" value="" required="">
+                    <input type="email" id="email" class="chat-field chat-mail" placeholder="your email" value="" required="">
+
+                    <input type="submit" class="chat-btn-start" value="Start Chat">
+                </div>
+            </div>
+        </form>
+        <div class="chat-close">
+            <div class="chat-header">
+                <p class="chat-title">Need a Website?</p>
+                <a href="http://www.webdesign.org/#" class="wdl-btn chat-btn-open"></a>
+            </div>
+        </div>
+    </div><div id="previewBlock" style="display:none;"><img src="" alt="" onload="showPopup()"></div></body></html>

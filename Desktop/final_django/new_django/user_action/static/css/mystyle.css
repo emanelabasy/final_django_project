@@ -1,0 +1,20 @@
+.navbar
+{
+
+	background-color: #245EFF;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: #245EFF;
+}
+
+.carousel-inner
+{
+	height: 400px; 
+}
+.carousel-caption
+{
+	margin-bottom: 600px;
+}
